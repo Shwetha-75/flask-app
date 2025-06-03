@@ -12,7 +12,8 @@ app=Flask(__name__)
 domains=[
     "http://localhost:5173",
      "http://localhost:5174",
-     "http://192.168.1.3:5173"
+     "http://192.168.1.3:5173",
+     os.getenv('FRONTEND_URL')
 ]
 
 cookie_domain=None
