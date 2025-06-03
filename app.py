@@ -43,8 +43,8 @@ def login():
             secret_value,
             max_age=3600,
             httponly=True,
-            samesite='Lax',
-            secure=False,
+            samesite='None',
+            secure=True,
             domain=cookie_domain
         )
         return response
